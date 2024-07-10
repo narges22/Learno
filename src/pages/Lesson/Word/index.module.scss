@@ -1,0 +1,80 @@
+.wordContaier {
+  padding: 50px 24px 16px;
+
+  .word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #3d3b40;
+    span {
+      font-size: 12px;
+      color: grey;
+      padding: 0 4px;
+    }
+  }
+
+  .meaning {
+    padding: 0 1rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    span {
+      font-weight: 500;
+    }
+    p {
+      text-align: center;
+      padding-top: 8px;
+      color: grey;
+      line-height: 1.5;
+    }
+  }
+
+  .icon {
+    background-color: white;
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+  }
+
+  .academicSyn {
+    background-color: #ebebff;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    display: flex;
+    span {
+      font-weight: 500;
+      font-size: 14px;
+    }
+    p {
+      padding-top: 8px;
+      color: #1d2026;
+      font-size: 14px;
+    }
+  }
+  .example {
+    background-color: #fff2e5;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    span {
+      font-weight: 500;
+      font-size: 14px;
+    }
+    p {
+      padding-top: 8px;
+      line-height: 1.25;
+      font-size: 14px;
+      color: #1d2026;
+    }
+  }
+}

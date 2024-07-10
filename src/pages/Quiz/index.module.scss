@@ -1,0 +1,25 @@
+body {
+  position: relative;
+}
+.container {
+  padding: 8px;
+  height: 97vh;
+}
+
+.main {
+  padding: 16px 8px;
+}
+.footer {
+  position: absolute;
+  bottom: 16px;
+  padding: 0 8px;
+  width: 92%;
+  display: flex;
+  justify-content: flex-end;
+  button {
+    min-width: 102px;
+  }
+  .full {
+    width: 100%;
+  }
+}

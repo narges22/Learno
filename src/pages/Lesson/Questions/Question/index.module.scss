@@ -1,0 +1,23 @@
+.main {
+  padding: 1rem 1rem;
+  .questionBox {
+    background-color: #f3f3f4;
+    border-radius: 8px;
+    padding: 12px 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease;
+  }
+  .selected {
+    background-color: #ff8911;
+    color: white;
+    transition: all 0.5s ease;
+  }
+  .correct {
+    background-color: green;
+    transition: all 0.5s ease;
+  }
+  .inCorrect {
+    background-color: red;
+    transition: all 0.5s ease;
+  }
+}

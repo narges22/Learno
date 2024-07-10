@@ -1,0 +1,62 @@
+.container {
+  height: 100vh;
+  position: relative;
+  > header {
+    background-color: #7f27ff;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    .lesson {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+.footer {
+  position: absolute;
+  padding: 0 1rem;
+  width: 91%;
+  bottom: 1rem;
+  .feedback {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+    align-items: center;
+    img {
+      width: 80px;
+    }
+    p {
+      margin: 0;
+      border: solid 2px #fdbf60;
+      padding: 12px 8px;
+      border-radius: 8px;
+      font-size: 14px;
+      width: 100%;
+    }
+    .part1 {
+      display: block;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.arrowLeft {
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 4px solid transparent;
+
+  border-right: 6px solid #fdbf60;
+}
+
+.loading {
+  img {
+    width: 80px;
+    height: 30px;
+  }
+}

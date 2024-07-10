@@ -1,0 +1,36 @@
+.container {
+  text-align: center;
+  padding: 0 1rem;
+  .logo {
+    padding-top: 40px;
+    svg {
+      height: 200px;
+    }
+  }
+  h1 {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .card {
+    padding-top: 3rem;
+  }
+  .divider {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    span {
+      position: absolute;
+      top: -10px;
+      left: 47%;
+      background-color: white;
+      padding: 0 8px;
+    }
+  }
+  .auth {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

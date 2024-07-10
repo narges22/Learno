@@ -1,0 +1,25 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+ 
+}
+
+body{
+  margin:0
+}
+
+button{
+  background: #7F27FF !important;
+  border-radius: 8px !important;
+  text-transform: capitalize !important;
+  min-width: 102px !important;
+
+}
+
+button>a{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  text-transform: capitalize;
+}

@@ -1,0 +1,55 @@
+
+    [
+        {
+            "id":"w1",
+            "word":"Abrupt",
+            "partOfSpeach":"Adj",
+            "meaning":"Sudden and unexpected in nature",
+            "complexity": 1,
+            "academicSynonym":"Impetus",
+            "defaultLevel": 1,
+            "example":"there was an abrupt change in the weather."
+        },
+        {
+            "id":"w2",
+            "word":"Adverse",
+            "partOfSpeach":"Adj",
+            "meaning":"Causing, or capable of causing harm",
+            "complexity": 1,
+            "academicSynonym":"Detrimental",
+            "defaultLevel": 1,
+            "example":"the game was cancelled due to the adverse weather conditions."
+        },
+        {
+            "id":"w3",
+            "word":"Autonomous",
+            "partOfSpeach":"Adj",
+            "meaning":"Forming or viewed as a unit apart or by itself",
+            "complexity": 1,
+            "academicSynonym":"Individualised",
+            "defaultlevel": 1,
+            "example":"Mexico became an autonomous state in 1817."
+        },
+        {
+            "id":"w4",
+            "word": "Chronic",
+            "partOfSpeach":"Adj",
+            "meaning": "Persisting for a long time or constantly recurring",
+            "complexity": 1,
+            "academicSynonym": "Prolonged",
+            "defaultlevel": 1,
+            "example":"The Author's chronic headache prevented her from finishing the chapter."
+        },
+        {
+            "id":"w5",
+            "word": "Haphazardly",
+            "partOfSpeach":"Adv",
+            "meaning": "In a random, chaotic, and incomplete manner",
+            "complexity": 1,
+            "academicSynonym": "Desultorily",
+            "defaultlevel": 1,
+            "example":"It was obvious that the house was built haphazardly."
+        }
+    ]
+    
+    
