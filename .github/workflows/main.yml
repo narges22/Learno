@@ -1,6 +1,7 @@
 name: Deploy React App to Azure
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
