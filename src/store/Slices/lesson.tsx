@@ -1,6 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { IWord, Lesson } from "./types";
-import words from "../../Dummy/words.json";
 import { LessonQuestion } from "../../pages/Lesson/Questions/type";
 
 const initialState: Lesson = {
@@ -19,9 +18,14 @@ export const lessonSlice = createSlice({
     setLessonQuestions: (state, action: PayloadAction<LessonQuestion[]>) => {
       state.questions = action.payload;
     },
+    resetLesson: (state) => {
+      state.vocabularies = [];
+      state.questions = [];
+    },
   },
 });
 
-export const { setLessonWords, setLessonQuestions } = lessonSlice.actions;
+export const { setLessonWords, setLessonQuestions, resetLesson } =
+  lessonSlice.actions;
 
 export default lessonSlice.reducer;

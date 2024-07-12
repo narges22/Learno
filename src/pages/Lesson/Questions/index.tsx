@@ -73,7 +73,7 @@ const LessonQuestions = () => {
       })
       .then((res: any) => {
         console.log(res.data);
-        dispatch(updateUserKnowledge(res.data.user.profile.words));
+        dispatch(updateUserKnowledge(res.data.user.words));
         navigate("/lesson/result");
       });
   };
@@ -90,11 +90,6 @@ const LessonQuestions = () => {
       setAnswerState(undefined);
       setCorrect(Ianswer.initial);
     }
-  };
-
-  const handlePrev = () => {
-    if (qNumber === 0) return;
-    setQNumer((qNumber) => qNumber - 1);
   };
 
   const onAnswer = (selectedAnswer: string) => {

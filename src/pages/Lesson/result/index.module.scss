@@ -46,4 +46,14 @@
       font-weight: bold;
     }
   }
+  .actionBox {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      padding-right: 30px;
+      padding-left: 30px;
+      color: white;
+    }
+  }
 }

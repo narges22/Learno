@@ -43,11 +43,6 @@ export interface IWord {
   example: string;
 }
 
-interface answerOption {
-  option: string;
-  relatedWorld: IWord;
-}
-
 // interface LessonQuestion {
 //   title: string;
 //   relatedWorld: IWord;

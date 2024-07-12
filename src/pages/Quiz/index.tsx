@@ -8,11 +8,7 @@ import RadioGroup from "@mui/material/RadioGroup";
 import Radio from "@mui/material/Radio";
 import { Box, FormControlLabel, Typography } from "@mui/material";
 import { useDispatch } from "react-redux";
-import {
-  addAnswer,
-  resetQuizAnsers,
-  updateUserKnowledge,
-} from "../../store/Slices/user";
+import { addAnswer, updateUserKnowledge } from "../../store/Slices/user";
 import { setquizWords, setQuizQuestions } from "../../store/Slices/quiz";
 import successAnimation from "../../assets/success.json";
 import { default as Lottie } from "lottie-react";

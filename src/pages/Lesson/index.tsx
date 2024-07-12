@@ -21,20 +21,6 @@ const Lesson = () => {
   const dispatch = useDispatch();
   const hasCalled = useRef<boolean>(false);
 
-  useEffect(() => {
-    if (vocabularies.length > 0) return;
-    const source = axios.CancelToken.source();
-    if (!hasCalled.current) {
-      hasCalled.current = true;
-      console.log("injaaaa", userAnswers);
-      getLevelData(userAnswers, source);
-    }
-  }, []);
-
-  if (!vocabularies) {
-    return null;
-  }
-
   const getLevelData = (
     userAnswers: QuizAnswer[],
     source: CancelTokenSource
@@ -61,6 +47,20 @@ const Lesson = () => {
         dispatch(setLessonWords(res.data.nextLevel.words as IWord[]));
       });
   };
+
+  useEffect(() => {
+    if (vocabularies?.length > 0) return;
+    const source = axios.CancelToken.source();
+    if (!hasCalled.current) {
+      hasCalled.current = true;
+      console.log("injaaaa", userAnswers);
+      getLevelData(userAnswers, source);
+    }
+  }, []);
+
+  if (!vocabularies) {
+    return null;
+  }
 
   const handleNext = () => {
     if (step === vocabularies?.length - 1) {
@@ -108,5 +108,3 @@ const Lesson = () => {
   );
 };
 export default Lesson;
-
-const Isolated = () => {};

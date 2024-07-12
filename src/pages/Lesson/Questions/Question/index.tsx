@@ -32,11 +32,11 @@ const Question: FC<IProps> = ({ data, correct, onAnswer }) => {
   return (
     <div className={styles.main}>
       <Typography sx={{ pb: 2 }}>
-        {`${data.title} `}
+        {`${data?.title} `}
         <b>{getTitle(data)} </b>
       </Typography>
       <div>
-        {data.answers.map((a) => (
+        {data?.answers.map((a) => (
           <Box
             className={clsx(
               styles.questionBox,

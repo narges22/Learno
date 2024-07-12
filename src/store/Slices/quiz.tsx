@@ -1,6 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import questions from "../../Dummy/quizQuestions.json";
-import { IWord, Question } from "./types";
+import { IWord } from "./types";
 import { LessonQuestion } from "../../pages/Lesson/Questions/type";
 
 export interface QuizState {
