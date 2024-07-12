@@ -3,7 +3,7 @@ import catClever from "../../../assets/cat/clever.svg";
 import { useAppSelector } from "../../../hooks/redux";
 import styles from "./index.module.scss";
 import { Button, Typography } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { resetLesson } from "../../../store/Slices/lesson";
 
