@@ -1,7 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import counterReducer from "./Slices/test";
 import quizReducer from "./Slices/quiz";
 import userReducer from "./Slices/user";
 import lessonReducer from "./Slices/lesson";
@@ -11,12 +10,13 @@ const persistConfig = {
   storage,
   whitelist: ["user", "lesson"],
 };
+
 const rootReducer = combineReducers({
-  counter: counterReducer,
   quiz: quizReducer,
   user: userReducer,
   lesson: lessonReducer,
 });
+
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
